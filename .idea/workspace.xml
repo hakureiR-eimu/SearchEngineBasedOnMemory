@@ -6,27 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf927c6-1425-46f5-81fe-acba9498bc00" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocumentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocumentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndexBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndexBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPosting.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPosting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPostingList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPostingList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTerm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTerm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTermTuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTermTuple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/FileSerializable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/FileSerializable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/impl/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/impl/Index.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleScanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractHit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractHit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractIndexSearcher$LogicalCombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractIndexSearcher$LogicalCombination.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StopWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StopWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StringSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StringSplitter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.dat" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +96,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="b5df6219-57eb-4546-b550-54697f215f31">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
