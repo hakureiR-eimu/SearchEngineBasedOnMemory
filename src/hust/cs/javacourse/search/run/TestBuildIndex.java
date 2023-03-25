@@ -16,7 +16,7 @@ public class TestBuildIndex {
      * @param args : 命令行参数
      */
     public static void main(String[] args){
-
+    System.out.println("hello world");
 
     }
 }

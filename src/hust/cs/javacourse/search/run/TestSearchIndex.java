@@ -7,6 +7,7 @@ import hust.cs.javacourse.search.query.Sort;
 import hust.cs.javacourse.search.util.Config;
 
 import javax.swing.plaf.nimbus.AbstractRegionPainter;
+import java.util.List;
 
 /**
  * 测试搜索
@@ -17,11 +18,14 @@ public class TestSearchIndex {
      * @param args ：命令行参数
      */
     public static void main(String[] args){
-
+        //System.out.println("hello world");
         List<Integer> sc=null;
+        /*
         int x=sc.
         for (int x: sc){
 
         }
+
+         */
     }
 }

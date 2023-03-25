@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf927c6-1425-46f5-81fe-acba9498bc00" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/index.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-engine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/txt/3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocumentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractDocumentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndexBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractIndexBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPosting.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPosting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPostingList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractPostingList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTerm.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTerm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTermTuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/AbstractTermTuple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/FileSerializable.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/FileSerializable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/impl/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/index/impl/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/parse/AbstractTermTupleStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractHit.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractHit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractIndexSearcher$LogicalCombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/AbstractIndexSearcher$LogicalCombination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/query/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StopWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StopWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StringSplitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/SearchEngineForStudent/hust/cs/javacourse/search/util/StringSplitter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/index.dat" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +47,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jrt://D:/IntelliJ IDEA 2022.3.1/jbr!/java.base/java/util/ArrayList.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -46,11 +61,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hust.cs.javacourse.search.index.impl" />
@@ -70,19 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SearchEngineForStudent" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SearchEngineForStudent" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.TestBuildIndex" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -109,5 +116,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
