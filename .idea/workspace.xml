@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf927c6-1425-46f5-81fe-acba9498bc00" name="变更" comment="main">
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/LengthTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/PatternTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/StopWordTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/Hit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/IndexSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/SimpleSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/txt/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/txt/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/txt/3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Java/javaCode/search-engine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "OverrideImplement.generate.javadoc": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Work/Java/javaCode/search-engine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hust.cs.javacourse.search.index.impl" />
@@ -103,7 +124,11 @@
       <workItem from="1623028249383" duration="1020000" />
       <workItem from="1625006611893" duration="26000" />
       <workItem from="1679740559779" duration="631000" />
-      <workItem from="1679927888704" duration="1240000" />
+      <workItem from="1679927888704" duration="1407000" />
+      <workItem from="1680078433733" duration="411000" />
+      <workItem from="1680078858685" duration="4283000" />
+      <workItem from="1680087903303" duration="332000" />
+      <workItem from="1680088563544" duration="6971000" />
     </task>
     <task id="LOCAL-00001" summary="main">
       <created>1679927933643</created>
@@ -112,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679927933643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="main">
+      <created>1680078273194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078273194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +155,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="b5df6219-57eb-4546-b550-54697f215f31">

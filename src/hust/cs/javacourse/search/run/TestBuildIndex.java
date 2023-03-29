@@ -17,6 +17,9 @@ public class TestBuildIndex {
      */
     public static void main(String[] args){
     System.out.println("hello world");
+    System.out.println(Config.DOC_DIR);
+    System.out.println(Config.INDEX_DIR);
+    System.out.println(Config.PROJECT_HOME_DIR);
 
     }
 }

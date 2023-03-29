@@ -20,7 +20,13 @@ public class Index extends AbstractIndex {
      */
     @Override
     public String toString() {
-        return null;
+        if(docIdToDocPathMapping.size()==0&&termToPostingListMapping.size()==0){
+            return null;
+        }else{
+            return "docIdToDocPathMap:\n"+docIdToDocPathMapping.toString()+"\ntermToPostingListMap:\n"+termToPostingListMapping.toString();
+        }
+
+
     }
 
     /**

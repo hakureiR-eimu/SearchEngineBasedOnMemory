@@ -17,6 +17,7 @@ public class Document extends AbstractDocument {
         return 0;
     }
 
+
     /**
      * 设置文档id
      *
@@ -43,10 +44,11 @@ public class Document extends AbstractDocument {
      * @param docPath ：文档绝对路径
      */
     @Override
-    public void setDocPath(String docPath) {
+    public void setDocPath(String docPath){
+        // set document path
+
 
     }
-
     /**
      * 获得文档包含的三元组列表
      *
