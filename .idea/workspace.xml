@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf927c6-1425-46f5-81fe-acba9498bc00" name="变更" comment="main">
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/LengthTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/PatternTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/StopWordTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/Hit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/IndexSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/SimpleSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/txt/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/txt/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/txt/3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +48,7 @@
   "keyToString": {
     "OverrideImplement.generate.javadoc": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/Java/javaCode/search-engine",
+    "last_opened_file_path": "D:/Work/Java/java参考/HUST2020JAVALAB/javalab1/SearchEngineForStudent",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -128,7 +110,8 @@
       <workItem from="1680078433733" duration="411000" />
       <workItem from="1680078858685" duration="4283000" />
       <workItem from="1680087903303" duration="332000" />
-      <workItem from="1680088563544" duration="6971000" />
+      <workItem from="1680088563544" duration="8885000" />
+      <workItem from="1680326419638" duration="2827000" />
     </task>
     <task id="LOCAL-00001" summary="main">
       <created>1679927933643</created>
