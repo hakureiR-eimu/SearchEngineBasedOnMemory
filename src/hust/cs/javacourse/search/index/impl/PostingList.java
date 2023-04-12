@@ -3,8 +3,10 @@ package hust.cs.javacourse.search.index.impl;
 import hust.cs.javacourse.search.index.AbstractPosting;
 import hust.cs.javacourse.search.index.AbstractPostingList;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Collections;
 import java.util.List;
 
 public class PostingList extends AbstractPostingList {
@@ -15,7 +17,9 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void add(AbstractPosting posting) {
-
+        if(!list.contains(posting)){
+            list.add(posting);
+        }
     }
 
     /**
@@ -25,7 +29,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public String toString() {
-        return null;
+        return list.toString();
     }
 
     /**
@@ -35,7 +39,11 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void add(List<AbstractPosting> postings) {
-
+        for(AbstractPosting posting:postings){
+            if(!list.contains(posting)){
+                list.add(posting);
+            }
+        }
     }
 
     /**
@@ -46,7 +54,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public AbstractPosting get(int index) {
-        return null;
+        return list.get(index);
     }
 
     /**
@@ -57,7 +65,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public int indexOf(AbstractPosting posting) {
-        return 0;
+        return list.indexOf(posting);
     }
 
     /**
@@ -68,7 +76,11 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public int indexOf(int docId) {
-        return 0;
+        for(int i = 0 ; i < list.size();i++)
+            if(list.get(i).getDocId() == docId) {
+                return i;
+            }
+        return -1;
     }
 
     /**
@@ -79,7 +91,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public boolean contains(AbstractPosting posting) {
-        return false;
+        return list.contains(posting);
     }
 
     /**
@@ -89,6 +101,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void remove(int index) {
+        list.remove(index);
 
     }
 
@@ -99,7 +112,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void remove(AbstractPosting posting) {
-
+        list.remove(posting);
     }
 
     /**
@@ -109,7 +122,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public int size() {
-        return 0;
+        return list.size();
     }
 
     /**
@@ -117,7 +130,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void clear() {
-
+        list.clear();
     }
 
     /**
@@ -127,7 +140,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public boolean isEmpty() {
-        return false;
+        return list.isEmpty();
     }
 
     /**
@@ -135,7 +148,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void sort() {
-
+        Collections.sort(list);
     }
 
     /**
@@ -145,7 +158,11 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-
+        try{
+            out.writeObject(list);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -155,6 +172,10 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void readObject(ObjectInputStream in) {
-
+        try{
+            list = (list <AbstractPosting>) in.readObject();
+        } catch(IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 }

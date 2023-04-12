@@ -2,11 +2,20 @@ package hust.cs.javacourse.search.index.impl;
 
 import hust.cs.javacourse.search.index.AbstractPosting;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Collections;
 import java.util.List;
 
 public class Posting extends AbstractPosting {
+    public Posting(){
+
+    }
+
+    public Posting(int docId,int freq,List<Integer> positions){
+        super(docId,freq,positions);
+    }
     /**
      * 判断二个Posting内容是否相同
      *
@@ -15,6 +24,16 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public boolean equals(Object obj) {
+        if(obj == this)
+            return true;
+        else if(obj instanceof Posting){
+            Posting posting = (Posting)obj;
+            if(((Posting) obj).positions != null && this.positions != null)
+                return this.positions.size() == posting.positions.size() && this.positions.containsAll(((Posting) obj).positions)
+                        && this.docId == posting.docId && this.freq == posting.freq;
+            else if(posting.positions == null && this.positions == null)
+                return this.freq == posting.freq && this.docId == posting.docId;
+        }
         return false;
     }
 
@@ -25,7 +44,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public String toString() {
-        return null;
+        return "docId"+this.docId+", freq:"+this.freq+",positions:"+this.positions+"";
     }
 
     /**
@@ -35,7 +54,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public int getDocId() {
-        return 0;
+        return this.docId;
     }
 
     /**
@@ -45,7 +64,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void setDocId(int docId) {
-
+        this.docId = docId;
     }
 
     /**
@@ -55,7 +74,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public int getFreq() {
-        return 0;
+        return this.freq;
     }
 
     /**
@@ -65,7 +84,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void setFreq(int freq) {
-
+        this.freq = freq;
     }
 
     /**
@@ -75,7 +94,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public List<Integer> getPositions() {
-        return null;
+        return this.positions;
     }
 
     /**
@@ -85,7 +104,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void setPositions(List<Integer> positions) {
-
+        this.positions = positions;
     }
 
     /**
@@ -96,7 +115,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public int compareTo(AbstractPosting o) {
-        return 0;
+        return this.docId - o.getDocId();
     }
 
     /**
@@ -104,7 +123,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void sort() {
-
+        Collections.sort(this.positions);
     }
 
     /**
@@ -114,7 +133,13 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-
+        try{
+            out.writeInt(this.docId);
+            out.writeInt(this.freq);
+            out.writeObject(this.positions);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -124,6 +149,13 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void readObject(ObjectInputStream in) {
+        try{
+            this.docId = in.readInt();
+            this.freq = in.readInt();
+            this.positions=(List<Integer>)in.readObject();
+        }catch(IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
 
     }
 }
