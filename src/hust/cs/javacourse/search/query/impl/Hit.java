@@ -7,8 +7,32 @@ import hust.cs.javacourse.search.query.AbstractHit;
 import java.util.Map;
 
 public class Hit extends AbstractHit {
-    public Hit(int docId, int freq){
-        super();
+
+    /**
+     * 默认构造函数
+     */
+    public Hit() {
+    }
+
+    /**
+     * 构造函数
+     *
+     * @param docId   : 文档id
+     * @param docPath : 文档绝对路径
+     */
+    public Hit(int docId, String docPath) {
+        super(docId, docPath);
+    }
+
+    /**
+     * 构造函数
+     *
+     * @param docId              ：文档id
+     * @param docPath            ：文档绝对路径
+     * @param termPostingMapping ：命中的三元组列表
+     */
+    public Hit(int docId, String docPath, Map<AbstractTerm, AbstractPosting> termPostingMapping) {
+        super(docId, docPath, termPostingMapping);
     }
 
     /**
@@ -18,7 +42,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public int getDocId() {
-        return 0;
+        return this.docId;
     }
 
     /**
@@ -28,7 +52,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public String getDocPath() {
-        return null;
+        return this.docPath;
     }
 
     /**
@@ -38,7 +62,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public String getContent() {
-        return null;
+        return this.content;
     }
 
     /**
@@ -48,7 +72,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public void setContent(String content) {
-
+        this.content = content;
     }
 
     /**
@@ -58,7 +82,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public double getScore() {
-        return 0;
+        return this.score;
     }
 
     /**
@@ -68,7 +92,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public void setScore(double score) {
-
+        this.score = score;
     }
 
     /**
@@ -78,7 +102,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public Map<AbstractTerm, AbstractPosting> getTermPostingMapping() {
-        return null;
+        return this.termPostingMapping;
     }
 
     /**
@@ -88,7 +112,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public String toString() {
-        return null;
+        return "docId: " + this.docId + "\ndocPath: " + this.docPath + "\ncontent: " + this.content +  "\nscore: " + this.score + "\nthis.termPostingMapping: " + this.termPostingMapping;
     }
 
     /**
@@ -99,6 +123,6 @@ public class Hit extends AbstractHit {
      */
     @Override
     public int compareTo(AbstractHit o) {
-        return 0;
+        return (int)(this.score - o.getScore());
     }
 }

@@ -6,6 +6,9 @@ import hust.cs.javacourse.search.index.AbstractTermTuple;
 import java.util.List;
 
 public class Document extends AbstractDocument {
+    public Document(int docId, String docPath, List<AbstractTermTuple> tuples) {
+        super(docId, docPath, tuples);
+    }
 
     /**
      * 获得文档id
@@ -14,7 +17,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public int getDocId() {
-        return 0;
+        return this.docId;
     }
 
 
@@ -25,7 +28,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public void setDocId(int docId) {
-
+        this.docId = docId;
     }
 
     /**
@@ -35,7 +38,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public String getDocPath() {
-        return null;
+        return this.docPath;
     }
 
     /**
@@ -46,7 +49,7 @@ public class Document extends AbstractDocument {
     @Override
     public void setDocPath(String docPath){
         // set document path
-
+        this.docPath = docPath;
 
     }
     /**
@@ -56,7 +59,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public List<AbstractTermTuple> getTuples() {
-        return null;
+        return this.tuples;
     }
 
     /**
@@ -66,7 +69,9 @@ public class Document extends AbstractDocument {
      */
     @Override
     public void addTuple(AbstractTermTuple tuple) {
-
+        if(!this.tuples.contains(tuple)){
+            this.tuples.add(tuple);
+        }
     }
 
     /**
@@ -77,7 +82,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public boolean contains(AbstractTermTuple tuple) {
-        return false;
+        return this.tuples.contains(tuple);
     }
 
     /**
@@ -88,7 +93,8 @@ public class Document extends AbstractDocument {
      */
     @Override
     public AbstractTermTuple getTuple(int index) {
-        return null;
+
+        return this.tuples.get(index);
     }
 
     /**
@@ -98,7 +104,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public int getTupleSize() {
-        return 0;
+        return this.tuples.size();
     }
 
     /**
@@ -108,6 +114,6 @@ public class Document extends AbstractDocument {
      */
     @Override
     public String toString() {
-        return null;
+        return "docId: "+this.docId+", "+"docPath: "+this.docPath+"tuples: "+this.tuples;
     }
 }

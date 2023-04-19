@@ -23,11 +23,21 @@ public abstract class AbstractIndexSearcher {
         /**
          * 与,即多个检索词必须都在命中文档里出现
          */
-        ADN,
+        AND,
         /**
          * 或, 即任意一个检索词在命中文档里出现
          */
-        OR
+        OR;
+        public static LogicalCombination valueof(String name) throws IllegalArgumentException , NullPointerException{
+            if(name != null && (name.equals("AND") || name.equals("and")))
+                return AND;
+            else if (name != null && (name.equals("OR") || name.equals("or")))
+                return OR;
+            else if(name != null)
+                throw new NullPointerException();
+            else
+                throw new IllegalArgumentException();
+        }
     }
     /**
      * 从指定索引文件打开索引，加载到index对象里. 一定要先打开索引，才能执行search方法

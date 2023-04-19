@@ -173,7 +173,7 @@ public class PostingList extends AbstractPostingList {
     @Override
     public void readObject(ObjectInputStream in) {
         try{
-            list = (list <AbstractPosting>) in.readObject();
+            list = (List<AbstractPosting>) in.readObject();
         } catch(IOException | ClassNotFoundException e){
             e.printStackTrace();
         }

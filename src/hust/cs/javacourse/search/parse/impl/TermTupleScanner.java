@@ -56,6 +56,7 @@ public class TermTupleScanner extends AbstractTermTupleScanner {
 	 */
 	@Override
 	public void close() {
+		super.close();
 	}
 	public TermTupleScanner(BufferedReader input){
 		super(input);
