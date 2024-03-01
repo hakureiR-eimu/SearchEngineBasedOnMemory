@@ -20,12 +20,13 @@ import java.util.List;
  */
 public class TestSearchIndex {
     /**
-     *  搜索程序入口
+     * 搜索程序入口
+     *
      * @param args ：命令行参数
      */
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //System.out.println("hello world");
-        List<Integer> sc=null;
+        List<Integer> sc = null;
         IndexSearcher indexSearcher = new IndexSearcher();
         indexSearcher.open(Config.INDEX_DIR + "index.dat");
         SimpleSorter sorter = new SimpleSorter();
@@ -49,15 +50,14 @@ public class TestSearchIndex {
                     else for (AbstractHit hit : hits)
                         System.out.println(hit.toString());
                     System.out.println("Input one word to query or input q to exit:");
-                }else if(split.length == 2){
-                    AbstractHit[] hits = indexSearcher.search(new Term(split[0]),new Term(split[1]),sorter);
+                } else if (split.length == 2) {
+                    AbstractHit[] hits = indexSearcher.search(new Term(split[0]), new Term(split[1]), sorter);
                     if (hits == null)
                         System.out.println("Not Found");
                     else for (AbstractHit hit : hits)
                         System.out.println(hit.toString());
                     System.out.println("Input one word to query or input q to exit:");
-                }
-                else if(split.length == 3){
+                } else if (split.length == 3) {
                     AbstractHit[] hits = indexSearcher.search(new Term(split[0]), new Term(split[2]), sorter, AbstractIndexSearcher.LogicalCombination.valueof(split[1]));
                     if (hits == null)
                         System.out.println("Not Found");

@@ -112,7 +112,7 @@ public class Hit extends AbstractHit {
      */
     @Override
     public String toString() {
-        return "docId: " + this.docId + "\ndocPath: " + this.docPath + "\ncontent: " + this.content +  "\nscore: " + this.score + "\nthis.termPostingMapping: " + this.termPostingMapping;
+        return "docId: " + this.docId + "\ndocPath: " + this.docPath + "\ncontent: " + this.content + "\nscore: " + this.score + "\nthis.termPostingMapping: " + this.termPostingMapping;
     }
 
     /**
@@ -123,6 +123,6 @@ public class Hit extends AbstractHit {
      */
     @Override
     public int compareTo(AbstractHit o) {
-        return (int)(this.score - o.getScore());
+        return (int) (this.score - o.getScore());
     }
 }

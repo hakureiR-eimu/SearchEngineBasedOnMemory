@@ -14,10 +14,11 @@ import java.io.File;
  */
 public class TestBuildIndex {
     /**
-     *  索引构建程序入口
+     * 索引构建程序入口
+     *
      * @param args : 命令行参数
      */
-    public static void main(String[] args){
+    public static void main(String[] args) {
     /*System.out.println("hello world");
     System.out.println(Config.DOC_DIR);
     System.out.println(Config.INDEX_DIR);

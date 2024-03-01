@@ -16,7 +16,7 @@ public class SimpleSorter implements Sort {
      */
     @Override
     public void sort(List<AbstractHit> hits) {
-        hits.sort((AbstractHit o1 , AbstractHit o2) -> ((int) (score(o2) - score(o1))));
+        hits.sort((AbstractHit o1, AbstractHit o2) -> ((int) (score(o2) - score(o1))));
     }
 
     /**
@@ -33,8 +33,8 @@ public class SimpleSorter implements Sort {
     @Override
     public double score(AbstractHit hit) {
         double ans = 0.0;
-        for(Map.Entry<AbstractTerm, AbstractPosting> entry: hit.getTermPostingMapping().entrySet()){
-            ans +=entry.getValue().getFreq();
+        for (Map.Entry<AbstractTerm, AbstractPosting> entry : hit.getTermPostingMapping().entrySet()) {
+            ans += entry.getValue().getFreq();
         }
         return ans;
     }

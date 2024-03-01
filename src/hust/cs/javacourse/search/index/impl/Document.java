@@ -47,11 +47,12 @@ public class Document extends AbstractDocument {
      * @param docPath ：文档绝对路径
      */
     @Override
-    public void setDocPath(String docPath){
+    public void setDocPath(String docPath) {
         // set document path
         this.docPath = docPath;
 
     }
+
     /**
      * 获得文档包含的三元组列表
      *
@@ -69,7 +70,7 @@ public class Document extends AbstractDocument {
      */
     @Override
     public void addTuple(AbstractTermTuple tuple) {
-        if(!this.tuples.contains(tuple)){
+        if (!this.tuples.contains(tuple)) {
             this.tuples.add(tuple);
         }
     }
@@ -114,6 +115,6 @@ public class Document extends AbstractDocument {
      */
     @Override
     public String toString() {
-        return "docId: "+this.docId+", "+"docPath: "+this.docPath+"tuples: "+this.tuples;
+        return "docId: " + this.docId + ", " + "docPath: " + this.docPath + "tuples: " + this.tuples;
     }
 }

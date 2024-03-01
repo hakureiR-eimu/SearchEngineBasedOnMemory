@@ -19,11 +19,11 @@ public class Term extends AbstractTerm {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj == this)
+        if (obj == this)
             return true;
-        else if(obj instanceof Term){
-            Term term = (Term)obj;
-            if(term.content != null && this.content != null)
+        else if (obj instanceof Term) {
+            Term term = (Term) obj;
+            if (term.content != null && this.content != null)
                 return term.content.equals(this.content);
             else return term.content == null && this.content == null;
         }
@@ -66,7 +66,7 @@ public class Term extends AbstractTerm {
 
     @Override
     public void writeObject(ObjectOutputStream out) {
-        try{
+        try {
             out.writeObject(this.content);
             // out.writeUTF(content);
         } catch (IOException e) {
@@ -76,9 +76,9 @@ public class Term extends AbstractTerm {
 
     @Override
     public void readObject(ObjectInputStream in) {
-        try{
+        try {
             //this.content = in.readUTF();
-            this.content = (String)in.readObject();
+            this.content = (String) in.readObject();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }

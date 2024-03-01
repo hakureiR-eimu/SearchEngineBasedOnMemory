@@ -21,7 +21,7 @@ public abstract class AbstractDocumentBuilder {
      * @return ：Document对象
      * </pre>
      */
-    public  abstract AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream);
+    public abstract AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream);
 
 //    /**
 //     * <pre>

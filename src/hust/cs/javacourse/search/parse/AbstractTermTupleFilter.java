@@ -11,7 +11,7 @@ package hust.cs.javacourse.search.parse;
  * 完成不同的过滤功能，多个过滤器可以形成过滤管道.
  * </pre>
  */
-public abstract class AbstractTermTupleFilter extends AbstractTermTupleStream{
+public abstract class AbstractTermTupleFilter extends AbstractTermTupleStream {
     /**
      * Filter的输入，类型为AbstractTermTupleStream
      */
@@ -19,9 +19,10 @@ public abstract class AbstractTermTupleFilter extends AbstractTermTupleStream{
 
     /**
      * 构造函数
+     *
      * @param input：Filter的输入，类型为AbstractTermTupleStream
      */
-    public AbstractTermTupleFilter(AbstractTermTupleStream input){
+    public AbstractTermTupleFilter(AbstractTermTupleStream input) {
         this.input = input;
     }
 
@@ -29,7 +30,7 @@ public abstract class AbstractTermTupleFilter extends AbstractTermTupleStream{
      * 实现父类AbstractTermTupleStream的close方法，关闭流
      */
     @Override
-    public void close(){
+    public void close() {
         input.close();
     }
 }

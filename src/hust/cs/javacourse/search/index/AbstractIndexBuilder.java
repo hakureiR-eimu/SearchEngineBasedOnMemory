@@ -17,7 +17,7 @@ public abstract class AbstractIndexBuilder {
      */
     protected int docId = 0;
 
-    public AbstractIndexBuilder(AbstractDocumentBuilder docBuilder){
+    public AbstractIndexBuilder(AbstractDocumentBuilder docBuilder) {
         this.docBuilder = docBuilder;
     }
 

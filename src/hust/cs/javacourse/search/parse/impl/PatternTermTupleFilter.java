@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 
 public class PatternTermTupleFilter extends AbstractTermTupleFilter {
     private Pattern pattern = Pattern.compile(Config.TERM_FILTER_PATTERN);
+
     /**
      * 构造函数
      *
@@ -26,7 +27,7 @@ public class PatternTermTupleFilter extends AbstractTermTupleFilter {
     @Override
     public AbstractTermTuple next() {
         AbstractTermTuple termTuple = input.next();
-        if(termTuple == null)
+        if (termTuple == null)
             return null;
         /*Matcher matcher = pattern.matcher(termTuple.term.getContent());
         StringBuilder sb = new StringBuilder();
@@ -35,9 +36,9 @@ public class PatternTermTupleFilter extends AbstractTermTupleFilter {
         termTuple.term.setContent(sb.toString());
         if(termTuple.term.getContent().equals(""))
             return null;*/
-        while(!termTuple.term.getContent().matches(Config.TERM_FILTER_PATTERN)){
+        while (!termTuple.term.getContent().matches(Config.TERM_FILTER_PATTERN)) {
             termTuple = input.next();
-            if(termTuple == null)
+            if (termTuple == null)
                 return null;
         }
         return termTuple;

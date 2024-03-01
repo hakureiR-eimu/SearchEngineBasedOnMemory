@@ -17,7 +17,7 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void add(AbstractPosting posting) {
-        if(!list.contains(posting)){
+        if (!list.contains(posting)) {
             list.add(posting);
         }
     }
@@ -39,8 +39,8 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void add(List<AbstractPosting> postings) {
-        for(AbstractPosting posting:postings){
-            if(!list.contains(posting)){
+        for (AbstractPosting posting : postings) {
+            if (!list.contains(posting)) {
                 list.add(posting);
             }
         }
@@ -76,8 +76,8 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public int indexOf(int docId) {
-        for(int i = 0 ; i < list.size();i++)
-            if(list.get(i).getDocId() == docId) {
+        for (int i = 0; i < list.size(); i++)
+            if (list.get(i).getDocId() == docId) {
                 return i;
             }
         return -1;
@@ -158,9 +158,9 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-        try{
+        try {
             out.writeObject(list);
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -172,9 +172,9 @@ public class PostingList extends AbstractPostingList {
      */
     @Override
     public void readObject(ObjectInputStream in) {
-        try{
+        try {
             list = (List<AbstractPosting>) in.readObject();
-        } catch(IOException | ClassNotFoundException e){
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

@@ -20,15 +20,16 @@ public abstract class AbstractTermTupleScanner extends AbstractTermTupleStream {
     /**
      * 缺省构造函数
      */
-    public  AbstractTermTupleScanner(){
+    public AbstractTermTupleScanner() {
 
     }
 
     /**
      * 构造函数
+     *
      * @param input：指定输入流对象，应该关联到一个文本文件
      */
-    public  AbstractTermTupleScanner(BufferedReader input){
+    public AbstractTermTupleScanner(BufferedReader input) {
         this.input = input;
     }
 
@@ -36,7 +37,7 @@ public abstract class AbstractTermTupleScanner extends AbstractTermTupleStream {
      * 实现父类AbstractTermTupleStream的close方法，关闭流
      */
     @Override
-    public void close(){
+    public void close() {
         try {
             input.close();
         } catch (IOException e) {

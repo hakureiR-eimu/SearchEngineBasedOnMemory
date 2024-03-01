@@ -21,7 +21,7 @@ public class DocumentBuilder extends AbstractDocumentBuilder {
     public AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream) {
         List<AbstractTermTuple> list = new ArrayList<>();
         AbstractTermTuple temp;
-        while((temp = termTupleStream.next()) != null)
+        while ((temp = termTupleStream.next()) != null)
             list.add(temp);
         termTupleStream.close();
         return new Document(docId, docPath, list);
@@ -31,7 +31,7 @@ public class DocumentBuilder extends AbstractDocumentBuilder {
     public AbstractDocument build(int docId, String docPath, File file) {
         BufferedReader reader;
         AbstractTermTupleStream scanner = null;
-        try{
+        try {
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
             scanner = new TermTupleScanner(reader);
             //scanner = new StopWordTermTupleFilter(scanner);
@@ -51,6 +51,6 @@ public class DocumentBuilder extends AbstractDocumentBuilder {
         }*/
 
         assert scanner != null;
-        return build(docId,docPath,scanner);
+        return build(docId, docPath, scanner);
     }
 }

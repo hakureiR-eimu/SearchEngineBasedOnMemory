@@ -9,13 +9,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class Posting extends AbstractPosting {
-    public Posting(){
+    public Posting() {
 
     }
 
-    public Posting(int docId,int freq,List<Integer> positions){
-        super(docId,freq,positions);
+    public Posting(int docId, int freq, List<Integer> positions) {
+        super(docId, freq, positions);
     }
+
     /**
      * 判断二个Posting内容是否相同
      *
@@ -24,14 +25,14 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public boolean equals(Object obj) {
-        if(obj == this)
+        if (obj == this)
             return true;
-        else if(obj instanceof Posting){
-            Posting posting = (Posting)obj;
-            if(((Posting) obj).positions != null && this.positions != null)
+        else if (obj instanceof Posting) {
+            Posting posting = (Posting) obj;
+            if (((Posting) obj).positions != null && this.positions != null)
                 return this.positions.size() == posting.positions.size() && this.positions.containsAll(((Posting) obj).positions)
                         && this.docId == posting.docId && this.freq == posting.freq;
-            else if(posting.positions == null && this.positions == null)
+            else if (posting.positions == null && this.positions == null)
                 return this.freq == posting.freq && this.docId == posting.docId;
         }
         return false;
@@ -44,7 +45,7 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public String toString() {
-        return "docId"+this.docId+", freq:"+this.freq+",positions:"+this.positions+"";
+        return "docId" + this.docId + ", freq:" + this.freq + ",positions:" + this.positions + "";
     }
 
     /**
@@ -133,11 +134,11 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void writeObject(ObjectOutputStream out) {
-        try{
+        try {
             out.writeInt(this.docId);
             out.writeInt(this.freq);
             out.writeObject(this.positions);
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -149,11 +150,11 @@ public class Posting extends AbstractPosting {
      */
     @Override
     public void readObject(ObjectInputStream in) {
-        try{
+        try {
             this.docId = in.readInt();
             this.freq = in.readInt();
-            this.positions=(List<Integer>)in.readObject();
-        }catch(IOException | ClassNotFoundException e){
+            this.positions = (List<Integer>) in.readObject();
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 
